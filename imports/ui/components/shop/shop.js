@@ -1,7 +1,7 @@
 /** ***************************************************************************
 
-@name: home.js
-@description: Modulo controller da pagina home
+@name: shop.js
+@description: Modulo controller da pagina shop
 @author: Gustavo Kluwe Saudade (https://github.com/GustavoSaudade)
 @since: 06/12/2016
 
@@ -11,11 +11,9 @@ import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 import uiRouter from 'angular-ui-router';
 
-import './home.html';
-import { name as Profile } from '../profile/profile';
-import { name as Shop } from '../shop/shop';
+import './shop.html';
 
-class Home {
+class Shop {
   constructor($scope, $reactive, $state) {
     'ngInject';
 
@@ -29,30 +27,21 @@ class Home {
 //============================= HELPERS =END====================================
 
 //============================= METHODS ========================================
-    this.clicaProfile = function() {
-      $state.go('profile');
-    }
-
-    this.clicaShop = function() {
-      $state.go('shop');
-    }
 //============================= METHODS =END====================================
   }
 }
 
-const name = 'home';
+const name = 'shop';
 
 //============================ MODULE ==========================================
 export default angular.module(name, [
   angularMeteor,
-  uiRouter,
-  Profile,
-  Shop
+  uiRouter
 ])
 .component(name, {
   templateUrl: `imports/ui/components/${name}/${name}.html`,
   controllerAs: name,
-  controller: Home
+  controller: Shop
 })
   .config(config);
 //============================ MODULE =END======================================
@@ -60,9 +49,9 @@ export default angular.module(name, [
 function config($stateProvider) {
   'ngInject';
 
-  $stateProvider.state('home', {
-    url: '/home',
-    template: '<home></home>'
+  $stateProvider.state('shop', {
+    url: '/shop',
+    template: '<shop></shop>'
   });
 
 

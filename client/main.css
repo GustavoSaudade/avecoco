@@ -64,6 +64,7 @@
 }
 /* ================== HOME ===================== */
 
+/* ================== PROFILE ================== */
 #conteudoProfile {
     position: absolute;
     background: url(pixelProfile.png) center;
@@ -73,3 +74,54 @@
     margin-top: -8px;
     margin-left: -8px;
 }
+/* ================== PROFILE ================== */
+
+/* ================== SHOP ===================== */
+#conteudoShop {
+    position: absolute;
+    background: url(fashion-woman-shoes-get-ready.jpg) center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+
+#lista {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color:  rgba(221,221,221, 0.6);
+}
+
+#caixinha {
+    position: relative;
+    height: 40%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#imgProduto {
+    position: relative;
+    height: 60%;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 0%;
+}
+
+#tituloProduto {
+    position: relative;
+    width: 90%;
+    height: 10%;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: center;
+}
+/* ================== SHOP ===================== */
