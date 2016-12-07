@@ -100,6 +100,7 @@
 
 #caixinha {
     position: relative;
+    color: #DDD;
     height: 40%;
     width: 90%;
     margin-left: 5%;
@@ -108,12 +109,29 @@
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+#informacoesProduto {
+    position: relative;
+    width: 90%;
+    height: 60%;
+    margin-left: 5%;
+    margin-top: 0%;
+}
+
+#imagem {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    margin-top: 0%;
+}
+
 #imgProduto {
     position: relative;
-    height: 60%;
-    width: 60%;
-    margin-left: 20%;
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
     margin-top: 0%;
+    border-radius: 5px;
 }
 
 #tituloProduto {
@@ -123,5 +141,22 @@
     margin-top: 5%;
     margin-left: 5%;
     text-align: center;
+}
+
+#botoesCaixinha {
+    position: relative;
+    width: 90%;
+    height: 20%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+}
+
+.btnCaixinha {
+    position: relative;
+    height: 90%;
+    width: 30%;
+    margin-left: 2%;
+    background: rgba(221,221,221, 0.6);
 }
 /* ================== SHOP ===================== */
